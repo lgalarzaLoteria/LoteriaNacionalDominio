@@ -43,5 +43,15 @@ namespace LoteriaNacionalDominio
             public string? usuarioTransaccion { get; set; }
             public string? equipoTransaccion { get; set; }
         }
+
+        public class AplicacionDTO
+        {
+            public short? codigoAplicacion { get; set; }
+            public string? nombreAplicacion { get; set; }
+            public bool? estadoAplicacion { get; set; }
+            public string? descripcionEstadoAplicacion { get; set; }
+            public string? usuarioTransaccion { get; set; }
+            public string? equipoTransaccion { get; set; }
+        }
     }
 }
