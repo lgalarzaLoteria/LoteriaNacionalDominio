@@ -53,5 +53,7 @@ namespace LoteriaNacionalDominio
             public string? usuarioTransaccion { get; set; }
             public string? equipoTransaccion { get; set; }
         }
+
+
     }
 }
