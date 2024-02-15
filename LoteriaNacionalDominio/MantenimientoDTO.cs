@@ -36,7 +36,7 @@ namespace LoteriaNacionalDominio
 
         public class NovedadesDTO
         {
-            public short? codigoNovedad { get; set; }
+            public string? codigoNovedad { get; set; }
             public string? descripcionNovedad { get; set; }
             public bool? estadoNovedad { get; set; }
             public string? descripcionEstadoNovedad { get; set; }
@@ -54,6 +54,34 @@ namespace LoteriaNacionalDominio
             public string? equipoTransaccion { get; set; }
         }
 
+        public class BaseDTO
+        {
+            public short? codigoBase { get; set; }
+            public string? nombreBase { get; set; }
+            public bool? estadoBase { get; set; }
+            public string? descripcionEstadoBase { get; set; }
+            public string? usuarioTransaccion { get; set; }
+            public string? equipoTransaccion { get; set; }
+        }
 
+        public class ProcesoDTO
+        {
+            public short? codigoProceso { get; set; }
+            public short? codigoAplicacion { get; set; }
+            public string? descripcionProceso { get; set; }
+            public string? nombreJob { get; set; }
+            public short? codigoBase { get; set; }
+            public short? frecuenciaEjecucion { get; set; }
+            public string? diasEspecificosEjecucion { get; set; }
+            public string? horaEjecucion { get; set; }
+            public string? tiempoPromedioEjecucion { get; set; }
+            public string? responsable1 { get; set; }
+            public string? responsable2 { get; set; }
+            public string? informacionRevisar { get; set; }
+            public bool? estadoProceso { get; set; }
+            public string? descripcionEstadoBase { get; set; }
+            public string? usuarioTransaccion { get; set; }
+            public string? equipoTransaccion { get; set; }
+        }
     }
 }
