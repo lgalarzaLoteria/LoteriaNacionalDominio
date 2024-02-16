@@ -12,6 +12,7 @@ namespace LoteriaNacionalDominio
         {
             public short? codigoSeccion { get; set; }
             public string? nombreSeccion { get; set; }
+            public short? porcentajeCalificacion { get; set; }
             public bool? estadoSeccion { get; set; }
             public string? descripcionEstadoSeccion { get; set; }
             public string? usuarioTransaccion { get; set; }
