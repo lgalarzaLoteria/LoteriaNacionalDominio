@@ -67,6 +67,14 @@ namespace LoteriaNacionalDominio
             public int CuestionariosNovedades { get; set; }
         }
 
+        public class CalificacionCuestionariosPDSDTO
+        {
+            public int codigoPDS { get; set; }
+            public string nombrePDS { get; set; }
+            public int codigoFormulario { get; set; }
+            public decimal porcentajeCumplimiento { get; set; }
+        }
+
 
     }
 }
