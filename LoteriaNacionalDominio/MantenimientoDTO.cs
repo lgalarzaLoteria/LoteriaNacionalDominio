@@ -36,7 +36,7 @@ namespace LoteriaNacionalDominio
 
         public class NovedadesDTO
         {
-            public string? codigoNovedad { get; set; }
+            public short? codigoNovedad { get; set; }
             public string? descripcionNovedad { get; set; }
             public bool? estadoNovedad { get; set; }
             public string? descripcionEstadoNovedad { get; set; }
