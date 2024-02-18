@@ -75,6 +75,11 @@ namespace LoteriaNacionalDominio
             public decimal porcentajeCumplimiento { get; set; }
         }
 
+        public class RankingCumplimientoPDSDTO
+        {
+            public int grupo { get; set; }
+            public string cantidadPDS { get; set; }
+        }
 
     }
 }
