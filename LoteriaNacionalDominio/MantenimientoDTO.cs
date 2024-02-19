@@ -24,6 +24,7 @@ namespace LoteriaNacionalDominio
             public short? codigoPregunta { get; set; }
             public short codigoSeccion { get; set; }
             public string? descripcionPregunta { get; set; }
+            public string? conceptoPregunta { get; set; }
             public DateTime? vigenciaDesde { get; set; }
             public DateTime? vigenciaHasta { get; set; }
             public bool? estadoPregunta { get; set; }
