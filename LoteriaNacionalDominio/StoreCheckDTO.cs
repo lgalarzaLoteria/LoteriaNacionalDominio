@@ -21,10 +21,13 @@ namespace LoteriaNacionalDominio
             public bool? respuesta { get; set; }
             public string? fechaRegistro { get; set; }
             public string? codigoSupervisor { get; set; }
-            public bool? presentaNovedad { get; set; }
+            public bool? respuestaSupervisor { get; set; }
             public short? codigoNovedad { get; set; }
             public string? descripcionNovedad { get; set; }
-            public string? fechaRevision { get; set; }
+            public string? fechaRevisionSupervisor { get; set; }
+            public string? codigoJefeVentas { get; set; }
+            public bool? respuestaJefeVentas { get; set; }
+            public string? fechaRevisionJefeVentas { get; set; }
             public string? usuarioCreacion { get; set; }
             public DateTime? fechaCreacion { get; set; }
             public string? equipoCreacion { get; set; }
