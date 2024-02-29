@@ -46,6 +46,8 @@ namespace LoteriaNacionalDominio
         {
             public int? codigoZona { get; set; }
             public string? nombreZona { get; set; }
+            public int? codigoSupervisor { get; set; }
+            public string? nombreSupervisor { get; set; }
             public int? codigoPDS { get; set; }
             public string? nombrePDS { get; set; }
             public int? CuestionariosPendientes { get; set; }
