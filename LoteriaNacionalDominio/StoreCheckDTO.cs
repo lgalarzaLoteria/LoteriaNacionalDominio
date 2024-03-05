@@ -90,5 +90,13 @@ namespace LoteriaNacionalDominio
             public string tipoConsulta { get; set; }
         }
 
+        public class TiempoRevisionDTO
+        {
+            public int codigoUsuario { get; set; }
+            public string nombreUsuario { get; set; }
+            public int revisadosATiempo { get; set; }
+            public int revisadosConAtraso { get; set; }
+        }
+
     }
 }
