@@ -22,5 +22,26 @@ namespace LoteriaNacionalDominio
             public string? TokenObtenido { get; set; }
             
         }
+
+        public class UsuarioExternoDTO
+        {
+            public string? username { get; set; }
+            public string? password { get; set; }
+
+        }
+
+        public class ComprobanteExternoDTO
+        {
+
+            public string? username { get; set; }
+
+            public string? password { get; set; }
+
+            public string? facturasTramaJson { get; set; }
+
+
+        }
+
+
     }
 }
