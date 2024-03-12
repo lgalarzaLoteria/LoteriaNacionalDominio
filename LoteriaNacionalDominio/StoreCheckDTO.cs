@@ -87,7 +87,7 @@ namespace LoteriaNacionalDominio
             public int grupo { get; set; }
             public string cantidadPDS { get; set; }
             public string codigoUsuario { get; set; }
-            public string? tipoConsulta { get; set; }
+            public string tipoConsulta { get; set; }
             public string? leyendaRango { get; set; }
         }
 
