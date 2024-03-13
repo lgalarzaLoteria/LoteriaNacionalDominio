@@ -40,6 +40,7 @@ namespace LoteriaNacionalDominio
         public class RegistroDTO
         {
             public List<RegistroFormularioDTO> registro { get; set; }
+            public string? evidenciaRevision { get; set; }
         }
 
         public class ZonasPorSupervisorDTO
