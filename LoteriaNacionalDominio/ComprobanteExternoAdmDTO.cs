@@ -8,14 +8,14 @@ namespace LoteriaNacionalDominio
 {
     public  class ComprobanteExternoAdmDTO
     {
-        public class ComprobantesLeidosDTO
-        {
-            public string? FechaComprobanteEnviado { get; set; }
-            public int? IdPuntoOperacion { get; set; }
-            public string? UsuarioExt { get; set; }
-            public string? ClaveExt { get; set; }
-            public string? FacturasJson { get; set; }
-        }
+        //public class ComprobantesLeidosDTO
+        //{
+        //    public string? FechaComprobanteEnviado { get; set; }
+        //    public int? IdPuntoOperacion { get; set; }
+        //    public string? UsuarioExt { get; set; }
+        //    public string? ClaveExt { get; set; }
+        //    public string? FacturasJson { get; set; }
+        //}
 
         public class ObtenerTokenDTO
         {
@@ -39,6 +39,11 @@ namespace LoteriaNacionalDominio
 
             public string? facturasTramaJson { get; set; }
 
+            public int? IdEnvioTrama { get; set; }              //2024/06/24 kparrales
+
+            public bool? TramaConfirmada { get; set; }          //2024/06/24 kparrales
+
+            public int? CantidadFacturasLeidas { get; set; }    //2024/06/24 kparrales
 
         }
 
