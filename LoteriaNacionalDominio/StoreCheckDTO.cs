@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace LoteriaNacionalDominio
 {
     public class StoreCheckDTO
@@ -98,6 +99,16 @@ namespace LoteriaNacionalDominio
             public string nombreUsuario { get; set; }
             public int revisadosATiempo { get; set; }
             public int revisadosConAtraso { get; set; }
+        }
+
+        public class GeolocalizacionDTO
+        {
+            public long? codigoPDS { get; set; }
+
+            public decimal? latitudPDS { get; set; }
+            public decimal? longitudPDS { get; set; }
+            public string direccionPDS { get; set; }
+
         }
 
     }
