@@ -108,7 +108,8 @@ namespace LoteriaNacionalDominio
             public decimal? latitudPDS { get; set; }
             public decimal? longitudPDS { get; set; }
             public string direccionPDS { get; set; }
-
+            public string? usuarioTransaccion { get; set; }
+            public string? equipoTransaccion { get; set; }
         }
 
     }
