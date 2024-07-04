@@ -116,5 +116,18 @@ namespace LoteriaNacionalDominio
             public string? equipoTransaccion { get; set; }
         }
 
+        public class RespuestaPDSDTO
+        {
+            /// <summary>
+            /// Codigo del PDS
+            /// </summary>
+            public int codigoPDS { get; set; }
+            /// <summary>
+            /// Nombre del PDS 
+            /// </summary>
+            public string nombrePDS { get; set; }
+
+        }
+
     }
 }
