@@ -42,8 +42,8 @@ namespace LoteriaNacionalDominio
         {
             public List<RegistroFormularioDTO> registro { get; set; }
             public string? evidenciaRevision { get; set; }
-            public decimal? latitudEvidencia { get; set; }
-            public decimal? longitudEvidencia { get; set; }
+            public string? latitudEvidencia { get; set; }
+            public string? longitudEvidencia { get; set; }
             public string direccionEvidencia { get; set; }
         }
 
@@ -109,8 +109,8 @@ namespace LoteriaNacionalDominio
 
             public long? secuencial { get; set; }
             public int? codigoPDS { get; set; }
-            public decimal? latitudPDS { get; set; }
-            public decimal? longitudPDS { get; set; }
+            public string? latitudPDS { get; set; }
+            public string? longitudPDS { get; set; }
             public string direccionPDS { get; set; }
             public string? usuarioTransaccion { get; set; }
             public string? equipoTransaccion { get; set; }
