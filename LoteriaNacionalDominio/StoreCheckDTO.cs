@@ -29,6 +29,10 @@ namespace LoteriaNacionalDominio
             public string? codigoJefeVentas { get; set; }
             public bool? respuestaJefeVentas { get; set; }
             public string? fechaRevisionJefeVentas { get; set; }
+            public string? inicioRegistroSupervisor { get; set; }
+            public string? finRegistroSupervisor { get; set; }
+            public string? inicioRegistroJefeComercial { get; set; }
+            public string? finRegistroJefeComercial { get; set; }
             public string? usuarioCreacion { get; set; }
             public DateTime? fechaCreacion { get; set; }
             public string? equipoCreacion { get; set; }
@@ -44,7 +48,7 @@ namespace LoteriaNacionalDominio
             public string? evidenciaRevision { get; set; }
             public string? latitudEvidencia { get; set; }
             public string? longitudEvidencia { get; set; }
-            public string direccionEvidencia { get; set; }
+            public string? direccionEvidencia { get; set; }
         }
 
         public class ZonasPorSupervisorDTO
@@ -109,9 +113,10 @@ namespace LoteriaNacionalDominio
 
             public long? secuencial { get; set; }
             public int? codigoPDS { get; set; }
+            public string? nombrePDS { get; set; }
             public string? latitudPDS { get; set; }
             public string? longitudPDS { get; set; }
-            public string direccionPDS { get; set; }
+            public string? direccionPDS { get; set; }
             public string? usuarioTransaccion { get; set; }
             public string? equipoTransaccion { get; set; }
         }
@@ -129,5 +134,30 @@ namespace LoteriaNacionalDominio
 
         }
 
+        public class RevisionElementosTIDTO
+        {
+            public long? codigoFormulario { get; set; }
+            public short? codigoElementoIT { get; set; }
+            public string? evidenciaElementoIT { get; set; }
+            public string? fechaEvidenciaIT { get; set; }
+            public string? usuarioTransaccion { get; set; }
+            public string? equipoTransaccion { get; set; }
+        }
+
+        public class RegistroElementosDTO
+        {
+            public List<RevisionElementosTIDTO> registro { get; set; }
+        }
+
+        public class EvidenciaTIDTO
+        {
+            public long? codigoFormulario { get; set; }
+            public int? codigoPDS { get; set; }
+            public string? evidenciaElementoIT { get; set; }
+            public string? fechaEvidenciaIT { get; set; }
+            public string? fechaDesde { get; set; }
+            public string? fechaHasta { get; set; }
+            
+        }
     }
 }

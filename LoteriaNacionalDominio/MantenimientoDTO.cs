@@ -85,5 +85,27 @@ namespace LoteriaNacionalDominio
             public string? usuarioTransaccion { get; set; }
             public string? equipoTransaccion { get; set; }
         }
+
+        public class JefeZonalDTO
+        {
+            public short? codigoJefeComercial { get; set; }
+            public string? nombreJefeComercial { get; set; }
+            public int? codigoZona { get; set; }
+            public bool? estadoJefeComercial { get; set; }
+            public string? descripcionEstadoJefeComercial { get; set; }
+            public string? usuarioTransaccion { get; set; }
+            public string? equipoTransaccion { get; set; }
+        }
+
+        public class ElementosTIDTO
+        {
+            public short? codigoElementoIT { get; set; }
+            public string? nombreElementoIT { get; set; }
+            public bool? estadoElementoIT { get; set; }
+            public string? descripcionEstadoElementoTI { get; set; }
+            public string? usuarioTransaccion { get; set; }
+            public string? equipoTransaccion { get; set; }
+        }
+
     }
 }
